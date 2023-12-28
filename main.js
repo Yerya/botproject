@@ -1,6 +1,3 @@
-
-
-
 document.getElementById('download-telegram-button').addEventListener('click', function() {
   const userAgent = navigator.userAgent;
 
