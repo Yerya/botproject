@@ -48,29 +48,36 @@ main {
     justify-content: center;
     align-items: center;
 }
+
 h1 {
     font-size: 4.7rem;
 }
+
 h2{
     font-size: 4rem;
     white-space: nowrap;
 }
+
 .tgme_action_button_new {
     color: inherit; 
     text-decoration: none; 
     cursor: pointer;
 }
+
 h1, h2, .losung{
     text-align: center;
 }
+
 h1, h2 {
     margin: 0;
 }
+
 p{
     display: flex;
     align-items: center;
     justify-self: center;
 }
+
 .losung p:not(:last-child)::after {
     content: "";
     display: inline-block;
@@ -82,9 +89,11 @@ p{
     margin-left: 1rem;
     margin-right: 1rem;
 }
+
 .losung{
     display: flex;
-}  
+} 
+ 
 img{
     width: 100%;
 }
@@ -193,7 +202,7 @@ button {
       transform: translateY(0);
       opacity: 1;
     }
-  }
+}
   
 @media screen and (min-width: 768px) {
 /* .hero {
@@ -214,5 +223,4 @@ h2{
 .lackoftelegrambutton{
     font-size: 1rem;
 }
-
 }
