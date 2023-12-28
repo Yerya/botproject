@@ -44,8 +44,13 @@ h1 {
 h2{
     font-size: 2.5rem;
 }
+.tgme_action_button_new {
+    color: inherit; 
+    text-decoration: none; 
+    cursor: pointer;
+}
 h1, h2, .losung{
-    text-align: center
+    text-align: center;
 }
 h1, h2 {
     margin: 0;

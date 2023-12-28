@@ -6,6 +6,21 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
+    <script>
+      
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        var queryParams = new URLSearchParams(window.location.search);
+        var customParam = queryParams.get('pixel');
+        fbq('init', customParam);
+        fbq('track', 'PageView');
+            </script>
 </head>
 <body>
     <main>
@@ -21,11 +36,11 @@
         </section>
         <section class="botlink" id="botlink">
             <div class="div-telegram">
-                <button class="custom-button"><div class="button-telegram"><h2>ПОЛУЧИТЬ БОТ</h2><div class="img-telegram"><img src="./assets/iconmonstr-telegram-1.svg" alt=""></div></div></button>
-                
+                <button class="custom-button" onclick="fbq('track', 'Lead'); return true;"><div class="button-telegram"><a class="tgme_action_button_new shine" href="tg://join?invite=CЮДА_КОД_ПРИГЛОСА_В_КАНАЛ"><h2>ПОЛУЧИТЬ БОТ</h2></a><div class="img-telegram"><img src="./assets/iconmonstr-telegram-1.svg" alt=""></div></div></button>
             </div>
             <button class="lackoftelegrambutton">У МЕНЯ НЕТ ТЕЛЕГРАМ</button>
         </div>
+        
         </section>
         <footer></footer>
     </main>
